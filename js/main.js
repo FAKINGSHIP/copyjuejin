@@ -89,16 +89,38 @@ var isopen2 = true;
             e.stopPropagation();// 其余浏览器 阻止事件冒泡
         }
     });
-
+   
     // 搜索框active
     var getDiv3 = document.querySelector(".search-form");
     getDiv3.addEventListener('click', function(){
-        
+        document.querySelector(".search-add").classList.add("active");
+        document.querySelector(".search-add-ul").classList.add("active");
+        document.querySelector(".search").classList.add("active");
+        document.querySelector(".search-form").classList.add("active");
+        document.querySelector(".search-icon-container").classList.add("active");
+        document.querySelector(".search-icon").setAttribute("src","https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/6dbcdb42ffe8d518a318a5e26efade18.svg");
+        // document.querySelector(".typehead").setAttribute("style","");
         document.querySelector(".search-input").setAttribute("placeholder","搜索文章/小册/标签/用户");
+        document.querySelector(".creator-item").classList.add("hide");
+        document.querySelector(".add-btn").classList.add("hide");
+        document.querySelector(".more").classList.add("hide");
+        document.querySelector(".notification").classList.add("hide");
+        document.querySelector(".menu").classList.add("hide");
     })
     document.addEventListener('click',function(){
-        
+        document.querySelector(".search-add").classList.remove("active");
+        document.querySelector(".search-add-ul").classList.remove("active");
+        document.querySelector(".search").classList.remove("active");
+        document.querySelector(".search-form").classList.remove("active");
+        document.querySelector(".search-icon-container").classList.remove("active");
+        document.querySelector(".search-icon").setAttribute("src","https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/1e8ab9a22f0ddc36349f60b38900d0bd.svg");
+        // document.querySelector(".typehead").setAttribute("style","display:none");
         document.querySelector(".search-input").setAttribute("placeholder","探索稀土掘金");
+        document.querySelector(".creator-item").classList.remove("hide");
+        document.querySelector(".add-btn").classList.remove("hide");
+        document.querySelector(".more").classList.remove("hide");
+        document.querySelector(".notification").classList.remove("hide");
+        document.querySelector(".menu").classList.remove("hide");   
     })
     getDiv3.addEventListener('click',function(event){
         var e=event||window.event;
