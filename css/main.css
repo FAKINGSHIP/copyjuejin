@@ -129,12 +129,12 @@
     color: #515767;
     position: relative;
 }
-/* .phone-hide .nav-item.link-item a:not(.no-hover) {
+.phone-hide .nav-item.link-item a:not(.no-hover) {
     display: inline-block;
     height: 5rem;
     margin: 0 1rem;
     line-height: 5rem;
-} */
+}
 .nav-item.active>.icon, .nav-item.active>a {
     color: #1e80ff;
     font-weight: 500;
@@ -154,6 +154,10 @@
 /* .phone-hide a{
     border-bottom: .167rem solid transparent;
 } */
+/* 上面那个会导致字体全部上移1px */
+.phone-hide li a{
+    box-sizing: border-box;
+}
 .phone-hide li a:hover{
     border-bottom: .167rem solid #1e80ff;
     
@@ -206,7 +210,7 @@
     font-size: 1.1rem;
     color: #8a919f;
     background-color: transparent;
-    transition: width .3s;
+    
 }
 .search-form .search-icon-container {
     position: relative;
