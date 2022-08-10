@@ -32,6 +32,8 @@ var isopen = true;
             e.stopPropagation();// 其余浏览器 阻止事件冒泡
         }
     })
+
+
 // 创作者中心菜单
 var getDiv1 = document.querySelector(".more");
 var isopen1 = true;
@@ -66,6 +68,8 @@ var isopen1 = true;
             e.stopPropagation();// 其余浏览器 阻止事件冒泡
         }
     });
+
+
 // 头像菜单
 var getDiv2 = document.querySelector(".menu");
 var isopen2 = true;
@@ -90,6 +94,7 @@ var isopen2 = true;
         }
     });
    
+
     // 搜索框active
     var getDiv3 = document.querySelector(".search-form");
     getDiv3.addEventListener('click', function(){
@@ -131,6 +136,7 @@ var isopen2 = true;
         }
     });
 //  !!!!!同时点击创作者中心和个人中心都会打开，sad
+
 // 下滑一定程度main-header消失,view-nav置顶
 function hideHeader(){
     var getDiv6 = document.querySelector(".main-header"); 
@@ -150,7 +156,7 @@ function hideHeader(){
 hideHeader();
 
 // 回到顶部
-function toTOP(){
+function toTop(){
     var getDiv4 = document.querySelector(".to-top-btn");
     getDiv4.onclick = function(){
         window.scrollTo(0,0);
@@ -164,7 +170,7 @@ function toTOP(){
         }
     })
 }
-toTOP();
+toTop();
 
 // 反馈
 var getDiv5 = document.querySelector(".meiqia-btn");
