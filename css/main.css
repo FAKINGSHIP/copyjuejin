@@ -236,7 +236,44 @@
 .search-form .search-icon-container.active {
     background: #eaf2ff;
 }
-/* 搜索历史，哥先不理 */
+/* 搜索历史 */
+.typehead{
+    width: 100%;
+    position: absolute;
+    top: 105%;
+    line-height: 2rem;
+    left: 0;
+    z-index: 1000;
+    min-width: 6rem;
+    font-size: 1rem;
+    color: #869aab;
+    list-style: none;
+    text-align: left;
+    border-radius: .17rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+}
+.typehead .title{
+    border-bottom: 1px solid #ebebeb;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.typehead .title .clear{
+    cursor: pointer;
+    color: #1e80ff;
+}
+.typehead .list{
+    cursor: pointer;
+    color: #5e6369;
+}
+.typehead .list div{
+    padding: .5rem 1rem;
+}
+.typehead .list div:hover {
+    background: #eff2f5;
+}
 /* 创作者中心 */
 .nav-item.add.creator-item{
     overflow: visible;
