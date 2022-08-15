@@ -196,7 +196,7 @@
     position: relative;
     height: 2.834rem;
     border: 1px solid #c2c8d1;
-    transition: width .2s;
+    transition: width .2s ease-in-out;
 }
 .search-form:hover{
     border: 1px solid #8c93a1;
